@@ -1,0 +1,19 @@
+{
+  "name": "stack-finance-zoho-api",
+  "version": "1.0.0",
+  "description": "implementation of ZOHO API in NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Logan-47/Stack-finance-zoho-API.git"
+  },
+  "author": "Ashish Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Logan-47/Stack-finance-zoho-API/issues"
+  },
+  "homepage": "https://github.com/Logan-47/Stack-finance-zoho-API#readme"
+}
