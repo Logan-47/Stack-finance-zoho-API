@@ -20,6 +20,12 @@
 
 ## API endpoints
 
+- While making each request u have to pass `access_token` in header
+
+```
+    Authorization: Zoho-oauthtoken {access_token}
+```
+
 <br>
 
 ### @ **/create-access-token**
