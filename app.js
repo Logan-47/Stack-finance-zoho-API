@@ -3,11 +3,10 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const xss = require('xss-clean');
 
-const invoiceRoute = require('./routes/invoiceRoute');
-const paymentOrderRoute = require('./routes/paymentOrderRoute');
-const userRoute = require('./routes/userRoute');
+const usersRoute = require('./routes/usersRoute');
+const recordsRoute = require('./routes/recordsRoute');
+const notesRoute = require('./routes/notesRoute');
 const refreshToken = require('./utils/refreshToken');
-const getrecords = require('./utils/getRecords');
 
 const app = express();
 
@@ -25,11 +24,10 @@ app.use(xss());
 
 // routes
 app.get('/create-access-token', refreshToken);
-app.get('/get-records/:recordName', getrecords);
 
-app.use('', invoiceRoute);
-app.use('', userRoute);
-app.use('', paymentOrderRoute);
+app.use('/users', usersRoute);
+app.use('/records', recordsRoute);
+app.use('/notes', notesRoute);
 
 // global error handler
 app.all('*', (req, res) => {
